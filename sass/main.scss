@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 900px;
+    height: 200px;
+    background-color: rgb(31, 34, 46);
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    position: relative;
+
+
+// -----------------------------------------------------------------
+    #volume {
+        width: 110px;
+        position: absolute;
+        left: 395px;
+        top: 39%;
+        transform-origin: center;
+        transform-box: content-box;
+    .line {
+        fill: grey;
+        opacity: .4;
+    }
+
+
+    .circle {
+        fill: grey;
+    }
+    }
+// -----------------------------------------------------------------
+
+#home {
+    width: 110px;
+    position: absolute;
+    bottom: 30%;
+    left: 120px;
+    transform-origin: bottom;
+
+    transform-box: content-box;
+#body {
+    fill: grey;
+    opacity: .4;
+}
+
+    #ceiling {
+    fill: grey;
+    opacity: .4;
+        transform-origin: center;
+    }
+
+    #heart {
+        fill: grey;
+        transform-origin: center;
+    }
+}
+// -----------------------------------------------------------------
+#settings {
+    width: 130px;
+    position: absolute;
+    bottom: 26%;
+    right: 110px;
+    transform-origin: center;
+    fill: grey;
+    transition: all ease-in-out 1s;
+}
+
+#s2 {
+    opacity: .4;
+    transform-origin: center;
+    transform-box: content-box;
+    transition: all ease-in-out 1s;
+}
+
+#s1 {
+   
+    transform-origin: center;
+    transform-box: content-box;
+    transition: all ease-in-out 1s;
+}
+
+}
+
+.credit {
+    position: absolute;
+    bottom: 2%;
+    font-family: "Quicksand";
+    color: rgb(102, 102, 102);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0)
+    }
+    50% {
+        fill: blueviolet;
+    }
+    100% {
+        transform: rotate(360deg);
+       
+    }
+}
+
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0)
+    }
+
+    50% {
+        fill: rgb(0, 255, 200);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+      
+    }
+}
+
+
+
+@keyframes glowLines {
+    0% {
+        fill: grey;
+        opacity: .4;
+    }
+
+    50% {
+        fill: blueviolet;
+        opacity: 1;
+    }
+
+    100% {
+        fill: grey;
+        opacity: .4;
+    }
+}
+
+@keyframes jumpCircles {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100px);
+        fill: rgb(0, 255, 200);
+    }
+}
+
+@keyframes jumpCircles2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100px);
+        fill: rgb(0, 255, 200);
+    }
+}
+
+@keyframes getBig {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+@keyframes roofUp {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+50% {
+    fill: blueviolet;
+}
+    100% {
+        transform: translateY(-100px) scale(.8);
+    }
+}
+
+@keyframes heartUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+        fill: rgb(0, 255, 200);
+    }
+}
